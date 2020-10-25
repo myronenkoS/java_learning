@@ -1,3 +1,5 @@
+package kitsoftlesson;
+
 public class Food {
     private String whatIsIt; //вид продукта
     private boolean isSoup; // возможно это суп
@@ -5,25 +7,31 @@ public class Food {
     private int kCal; // килокалории пляшут туда сюда
 
 
-    public String getWhatIsIt () {
-        return  whatIsIt;
+    public String getWhatIsIt() {
+        return whatIsIt;
     }
-    public void setWhatIsIt (String whatIsIt) {
+
+    public void setWhatIsIt(String whatIsIt) {
         this.whatIsIt = whatIsIt;
     }
-    public boolean isSoup () {
+
+    public boolean isSoup() {
         return isSoup;
     }
-    public void setSoup (boolean Soup) {
+
+    public void setSoup(boolean Soup) {
         isSoup = Soup;
     }
-    public double getWeight () {
+
+    public double getWeight() {
         return weight;
     }
-    public void setWeight (double weight) {
+
+    public void setWeight(double weight) {
         this.weight = weight;
     }
-    public int getkCal () {
+
+    public int getkCal() {
         return kCal;
     }
 
@@ -31,7 +39,7 @@ public class Food {
         this.kCal = kCal;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Food ob = new Food();
 
         ob.setWhatIsIt("Колбаса");
@@ -49,7 +57,6 @@ public class Food {
         System.out.println();
 
     }
-
 
 
 }
