@@ -1,12 +1,17 @@
 package kitsoftlesson;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Food {
     private String whatIsIt; //вид продукта
     private boolean isSoup; // возможно это суп
     private double weight; // у продукта может быть разный вес
-    private int kCal; // килокалории пляшут туда сюда
+    private int kcal; // килокалории пляшут туда сюда
 
-
+    /*
     public String getWhatIsIt() {
         return whatIsIt;
     }
@@ -38,7 +43,7 @@ public class Food {
     public void setkCal(int kCal) {
         this.kCal = kCal;
     }
-
+*/
     public static void main(String[] args) {
         Food ob = new Food();
 
@@ -51,8 +56,8 @@ public class Food {
         ob.setWeight(0.500);
         System.out.println(ob.getWeight());
 
-        ob.setkCal(4000);
-        System.out.println(ob.getkCal());
+        ob.setKcal(4000);
+        System.out.println(ob.getKcal());
 
         System.out.println();
 
